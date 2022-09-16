@@ -18,13 +18,12 @@
     <label for="comments" class="form-label">Comments</label>
     <input type="text" class="form-control" [(ngModel)]="comments" name="comments">
   </div>
+  
   <button (click)="addInspection()" *ngIf="inspection.id==0" class="btn btn-primary">
     Add
   </button>
   <button (click)="updateInspection()" *ngIf="inspection.id!=0" class="btn btn-primary">
     Update
   </button>
-
-
 </form>
 
